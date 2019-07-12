@@ -116,7 +116,7 @@ int main(int argc, char *argv[])
   char buf[BUFSIZE];
 
 
-  struct urlinfo_t urlinfo;
+  struct urlinfo_t *urlinfo;
 
   if (argc != 2) {
     fprintf(stderr,"usage: client HOSTNAME:PORT/PATH\n");
